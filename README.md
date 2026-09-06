@@ -1,4 +1,31 @@
+<div align="center">
+
+<img src="tunisport.png" alt="Tunisport logo" width="220" />
+
 # Tunisport
+
+**Football match reservation platform for Tunisian sporting events**
+
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+<img src="https://img.shields.io/badge/Symfony_5.4-000000?style=for-the-badge&logo=symfony&logoColor=white" alt="Symfony" />
+<img src="https://img.shields.io/badge/Doctrine_ORM-FC6A31?style=for-the-badge&logo=doctrine&logoColor=white" alt="Doctrine ORM" />
+<img src="https://img.shields.io/badge/Twig-1E8A3B?style=for-the-badge&logo=twig&logoColor=white" alt="Twig" />
+<img src="https://img.shields.io/badge/MySQL_8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+<br />
+<img src="https://img.shields.io/badge/Java_8-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+<img src="https://img.shields.io/badge/JavaFX-007396?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" />
+<img src="https://img.shields.io/badge/Apache_Ant-A81C7D?style=for-the-badge&logo=apacheant&logoColor=white" alt="Apache Ant" />
+<img src="https://img.shields.io/badge/JDBC-4479A1?style=for-the-badge&logo=databricks&logoColor=white" alt="JDBC" />
+<br />
+<img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
+<img src="https://img.shields.io/badge/Google_OAuth-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google OAuth" />
+<img src="https://img.shields.io/badge/Facebook_OAuth-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook OAuth" />
+<img src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white" alt="Composer" />
+<img src="https://img.shields.io/badge/PHPUnit-3C9CD7?style=for-the-badge&logo=php&logoColor=white" alt="PHPUnit" />
+
+</div>
+
+---
 
 Tunisport is a football match reservation platform for Tunisian sporting events. It lets visitors browse matches, teams, tournaments and venues, book and pay for tickets online, arrange associated accommodation and transport, and interact through a blog, comments, complaints and a chatbot. Administrators manage the catalogue and reservations through a back office, and a separate JavaFX desktop client offers a native admin view of the match schedule.
 
@@ -389,3 +416,15 @@ Before opening a change, please:
 - Never commit `.env`, credentials, `vendor/`, `node_modules/` or build output.
 - Prefer `PreparedStatement` in new Java database code; the existing `MatchFCRUD` builds SQL by string concatenation and is injection-prone.
 - Put new payment and reservation logic in `App\Manager\ReservationManager` and `App\Service\StripeService` rather than inline in controllers.
+
+---
+
+<div align="center">
+
+<img src="tunisport.png" alt="Tunisport" width="90" />
+
+**Built with ❤️ by Hamdi Khsib**
+
+[![GitHub](https://img.shields.io/badge/GitHub-KHSIB--Hamdi-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KHSIB-Hamdi)
+
+</div>
