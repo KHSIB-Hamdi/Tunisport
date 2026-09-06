@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DashboardController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="24.0" layoutY="114.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="45.0" prefWidth="200.0" styleClass="semi-top-form" stylesheets="@dashboardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="112.0" layoutY="-77.0" prefHeight="35.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="12.0" text="tunisport">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="close" layoutX="1027.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="52.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLOSE" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="minimize" layoutX="1012.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="24.0" prefWidth="34.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MINUS" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="88.0" prefHeight="554.4" prefWidth="200.0" styleClass="nav-form" stylesheets="@dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="64.0" layoutY="143.0" text="Welcome" textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="73.09999084472656" endY="-1.52587890625E-5" layoutX="113.0" layoutY="185.0" startX="-100.0" stroke="#faf4f4" />
+                              <Button fx:id="btnhome" layoutX="10.0" layoutY="206.0" mnemonicParsing="false" onAction="#switchform" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Dashboard" textFill="WHITE">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="1.5em" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btnmatchs" layoutX="10.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchform" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Matchs" textFill="WHITE">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="CIRCLE" size="1.5em" />
+                                 </graphic>
+                              </Button>
+                              <ImageView fitHeight="111.0" fitWidth="124.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@tunisport.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="home_form" layoutX="-1.0" prefHeight="554.4" prefWidth="900.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="526.0" prefWidth="874.0" stylesheets="@dashboardDesign.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="13.0" layoutY="13.0" prefHeight="173.0" prefWidth="875.0" stylesheets="@dashboardDesign.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane layoutX="26.0" layoutY="14.0" prefHeight="147.0" prefWidth="241.0" styleClass="card" stylesheets="@dashboardDesign.css" />
+                                    <AnchorPane layoutX="317.0" layoutY="14.0" prefHeight="147.0" prefWidth="241.0" styleClass="card" stylesheets="@dashboardDesign.css" />
+                                    <AnchorPane layoutX="607.0" layoutY="14.0" prefHeight="147.0" prefWidth="241.0" styleClass="card" stylesheets="@dashboardDesign.css" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="match_form" layoutX="30.0" layoutY="32.0" prefHeight="554.4" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutY="37.0" prefHeight="526.0" prefWidth="874.0" stylesheets="@dashboardDesign.css">
+                                 <children>
+                                    <AnchorPane prefHeight="266.0" prefWidth="874.0" stylesheets="@dashboardDesign.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <TableView fx:id="match_table" layoutX="20.0" layoutY="20.0" onMouseClicked="#MatchSelect" prefHeight="232.0" prefWidth="834.0">
+                                            <columns>
+                                              <TableColumn fx:id="match_col_id" prefWidth="75.0" text="ID" visible="false" />
+                                              <TableColumn fx:id="eqA_col" prefWidth="75.0" text="EquipeA" />
+                                                <TableColumn fx:id="eqB_col" prefWidth="75.0" text="EquipeB" />
+                                                <TableColumn fx:id="date_col" prefWidth="75.0" text="Date" />
+                                                <TableColumn fx:id="type_col" prefWidth="75.0" text="Type" />
+                                                <TableColumn fx:id="stade_col" prefWidth="75.0" text="Stade" />
+                                                <TableColumn fx:id="tournoi_col" prefWidth="75.0" text="Tournoi" />
+                                                <TableColumn fx:id="rA_col" prefWidth="75.0" text="ResultatA" />
+                                                <TableColumn fx:id="rB_col" prefWidth="75.0" text="ResultatB" />
+                                                <TableColumn fx:id="prix_col" prefWidth="75.0" text="Prix" />
+                                                <TableColumn fx:id="image_col" prefWidth="156.79996337890623" text="Image" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                    <Label layoutX="24.0" layoutY="294.0" text="Equipe à domicile:" />
+                                    <Label layoutX="24.0" layoutY="349.0" text="Equipe éxtérieure:" />
+                                    <Label layoutX="24.0" layoutY="402.0" text="Date du match:" />
+                                    <Label layoutX="24.0" layoutY="453.0" text="Type du match:" />
+                                    <Label layoutX="305.0" layoutY="293.0" text="Stade du match:" />
+                                    <Label layoutX="305.0" layoutY="349.0" text="Tournoi du match:" />
+                                    <Label layoutX="305.0" layoutY="403.0" text="Résultat de l'équipe à domicile:" />
+                                    <TextField fx:id="tfrA" layoutX="490.0" layoutY="398.0" prefHeight="25.0" prefWidth="48.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="305.0" layoutY="453.0" text="Résultat de l'équipe à éxtérieure:" />
+                                    <TextField fx:id="tfrB" layoutX="500.0" layoutY="449.0" prefHeight="25.0" prefWidth="48.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <DatePicker fx:id="dpdate" layoutX="138.0" layoutY="397.0" prefHeight="25.0" prefWidth="119.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <AnchorPane layoutX="677.0" layoutY="302.0" prefHeight="109.0" prefWidth="78.0" stylesheets="@dashboardDesign.css">
+                                       <children>
+                                          <Button fx:id="btnimporter" layoutY="83.0" mnemonicParsing="false" onAction="#insererImage" prefHeight="6.0" prefWidth="78.0" styleClass="import-btn" stylesheets="@dashboardDesign.css" text="Importer" />
+                                          <ImageView fx:id="ivimage" fitHeight="84.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <Button fx:id="btnajouter" layoutX="792.0" layoutY="487.0" mnemonicParsing="false" onAction="#ajouterMatch" styleClass="add-btn" stylesheets="@dashboardDesign.css" text="Ajouter">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+                                       </graphic></Button>
+                                    <Button fx:id="btnsupprimer" layoutX="684.0" layoutY="487.0" mnemonicParsing="false" onAction="#supprimerMatch" styleClass="delete-btn" stylesheets="@dashboardDesign.css" text="Supprimer">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="TRASH" />
+                                       </graphic></Button>
+                                    <Button fx:id="btnmodifier" layoutX="586.0" layoutY="487.0" mnemonicParsing="false" onAction="#modifierMatch" styleClass="update-btn" stylesheets="@dashboardDesign.css" text="Modifier">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="EDIT" />
+                                       </graphic></Button>
+                                    <TextField fx:id="tfprix" layoutX="597.0" layoutY="290.0" prefHeight="25.0" prefWidth="44.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="564.0" layoutY="294.0" text="Prix:" />
+                                    <AnchorPane layoutX="768.0" layoutY="302.0" prefHeight="109.0" prefWidth="78.0" stylesheets="@dashboardDesign.css">
+                                       <children>
+                                          <Button fx:id="btnimporter2" layoutY="83.0" mnemonicParsing="false" onAction="#insererImage2" prefHeight="6.0" prefWidth="78.0" styleClass="import-btn" stylesheets="@dashboardDesign.css" text="Importer" />
+                                          <ImageView fx:id="ivimage2" fitHeight="84.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <ComboBox fx:id="cbeqA" layoutX="138.0" layoutY="289.0" prefHeight="26.0" prefWidth="108.0" stylesheets="@dashboardDesign.css" />
+                                    <ComboBox fx:id="cbeqB" layoutX="138.0" layoutY="344.0" prefHeight="26.0" prefWidth="108.0" />
+                                    <ComboBox fx:id="cbstade" layoutX="409.0" layoutY="289.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <ComboBox fx:id="cbtournoi" layoutX="418.0" layoutY="344.0" prefHeight="26.0" prefWidth="104.0" />
+                                    <ComboBox fx:id="cbtype" layoutX="137.0" layoutY="449.0" prefHeight="26.0" prefWidth="110.0" />
+                                    <TextField fx:id="tfid" layoutX="575.0" layoutY="353.0" prefHeight="26.0" prefWidth="50.0" visible="false" />
+                                    <Button fx:id="btneffacer" layoutX="504.0" layoutY="487.0" mnemonicParsing="false" onAction="#reset" styleClass="clear-btn" stylesheets="@dashboardDesign.css" text="Vider">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

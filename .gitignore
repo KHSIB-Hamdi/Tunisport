@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------------------
+# Tunisport — repository-wide ignore rules
+#
+# Two independent projects share this repository:
+#   Symfony/  PHP web application
+#   Java/     NetBeans/Ant JavaFX desktop client
+#
+# Symfony/.gitignore holds the Symfony Flex recipe rules; this file covers the
+# repository as a whole.
+# ---------------------------------------------------------------------------
+
+# --- Secrets -----------------------------------------------------------------
+# .env holds real third-party credentials in this working copy. Configure your
+# own values in Symfony/.env.local (see Symfony/.env.example).
+/Symfony/.env
+/Symfony/.env.local
+/Symfony/.env.local.php
+/Symfony/.env.*.local
+/Symfony/config/secrets/prod/prod.decrypt.private.php
+*.pem
+*.key
+!*.public.key
+
+# --- PHP / Symfony -----------------------------------------------------------
+/Symfony/vendor/
+/Symfony/var/
+/Symfony/public/bundles/
+/Symfony/phpunit.xml
+.phpunit.result.cache
+/Symfony/.php-cs-fixer.cache
+/Symfony/.phpunit.cache/
+
+# --- Node --------------------------------------------------------------------
+# There is no build step (no package.json at the Symfony root); front-end assets
+# are committed under public/assets*. node_modules/ is a leftover and must not
+# be re-committed.
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Java / NetBeans / Ant ---------------------------------------------------
+/Java/build/
+/Java/dist/
+/Java/nbproject/private/
+nbproject/private/
+build/
+dist/
+*.class
+*.jar
+!Java/lib/*.jar
+
+# --- IDEs and editors --------------------------------------------------------
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# --- Operating system --------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs, caches, temporary files -------------------------------------------
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
