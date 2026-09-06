@@ -191,7 +191,9 @@ Actions still required by the repository owner — these are deliberately **not*
 5. Regenerate `APP_SECRET` (invalidates existing `remember_me` cookies and signed URLs).
 6. Change the MySQL password if the DSN reflects a real, non-local account.
 
-Because there was no Git history before this audit, these values were never pushed anywhere from this repository — but they may have been shared through other channels, so rotation is still the safe course.
+**These values have been publicly exposed on GitHub.** The working copy audited here had no `.git` directory, but a repository already existed at `https://github.com/KHSIB-Hamdi/Tunisport.git` containing this snapshot — `Symfony/.env` was tracked there and publicly readable. Rotation is therefore **urgent, not precautionary**.
+
+Republishing a clean history does **not** undo the exposure: GitHub can retain unreferenced commits after a force-push, and the repository may already have been cloned, forked or scraped by automated secret crawlers. Treat every value listed above as compromised and rotate it at the provider, in the order given. Rotating is the only action that actually revokes access; the Git cleanup is secondary.
 
 ### 4.2 Hardcoded API keys in source — REQUIRES OWNER ACTION
 
