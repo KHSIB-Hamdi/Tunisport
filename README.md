@@ -6,22 +6,20 @@
 
 **Football match reservation platform for Tunisian sporting events**
 
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-<img src="https://img.shields.io/badge/Symfony_5.4-000000?style=for-the-badge&logo=symfony&logoColor=white" alt="Symfony" />
-<img src="https://img.shields.io/badge/Doctrine_ORM-FC6A31?style=for-the-badge&logo=doctrine&logoColor=white" alt="Doctrine ORM" />
-<img src="https://img.shields.io/badge/Twig-1E8A3B?style=for-the-badge&logo=twig&logoColor=white" alt="Twig" />
-<img src="https://img.shields.io/badge/MySQL_8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-<br />
-<img src="https://img.shields.io/badge/Java_8-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-<img src="https://img.shields.io/badge/JavaFX-007396?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" />
-<img src="https://img.shields.io/badge/Apache_Ant-A81C7D?style=for-the-badge&logo=apacheant&logoColor=white" alt="Apache Ant" />
-<img src="https://img.shields.io/badge/JDBC-4479A1?style=for-the-badge&logo=databricks&logoColor=white" alt="JDBC" />
-<br />
-<img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
-<img src="https://img.shields.io/badge/Google_OAuth-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google OAuth" />
-<img src="https://img.shields.io/badge/Facebook_OAuth-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook OAuth" />
-<img src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white" alt="Composer" />
-<img src="https://img.shields.io/badge/PHPUnit-3C9CD7?style=for-the-badge&logo=php&logoColor=white" alt="PHPUnit" />
+<img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&amp;logo=php&amp;logoColor=white">
+<img alt="Symfony 5.4" src="https://img.shields.io/badge/Symfony-5.4-000000?style=flat-square&amp;logo=symfony&amp;logoColor=white">
+<img alt="Doctrine ORM" src="https://img.shields.io/badge/Doctrine%20ORM-FC6A31?style=flat-square&amp;logo=doctrine&amp;logoColor=white">
+<img alt="Twig" src="https://img.shields.io/badge/Twig-1E8A3B?style=flat-square">
+<img alt="MySQL 8" src="https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&amp;logo=mysql&amp;logoColor=white">
+<img alt="Java 8" src="https://img.shields.io/badge/Java-8-ED8B00?style=flat-square&amp;logo=openjdk&amp;logoColor=white">
+<img alt="JavaFX" src="https://img.shields.io/badge/JavaFX-007396?style=flat-square&amp;logo=openjdk&amp;logoColor=white">
+<img alt="Apache Ant" src="https://img.shields.io/badge/Apache%20Ant-A81C7D?style=flat-square&amp;logo=apacheant&amp;logoColor=white">
+<img alt="JDBC" src="https://img.shields.io/badge/JDBC-4479A1?style=flat-square">
+<img alt="Stripe" src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&amp;logo=stripe&amp;logoColor=white">
+<img alt="Google OAuth" src="https://img.shields.io/badge/Google%20OAuth-4285F4?style=flat-square&amp;logo=google&amp;logoColor=white">
+<img alt="Facebook OAuth" src="https://img.shields.io/badge/Facebook%20OAuth-1877F2?style=flat-square&amp;logo=facebook&amp;logoColor=white">
+<img alt="Composer" src="https://img.shields.io/badge/Composer-885630?style=flat-square&amp;logo=composer&amp;logoColor=white">
+<img alt="PHPUnit" src="https://img.shields.io/badge/PHPUnit-3C9CD7?style=flat-square&amp;logo=php&amp;logoColor=white">
 
 </div>
 
@@ -425,6 +423,6 @@ Before opening a change, please:
 
 **Built with ❤️ by Hamdi Khsib**
 
-[![GitHub](https://img.shields.io/badge/GitHub-KHSIB--Hamdi-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KHSIB-Hamdi)
+[![GitHub](https://img.shields.io/badge/GitHub-KHSIB--Hamdi-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/KHSIB-Hamdi)
 
 </div>
